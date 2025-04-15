@@ -122,7 +122,7 @@ nav#page2 ul li a:hover {
   color: black;
 }
 
-#love, #members {
+#love, #members, #clock {
   width: 85%;
   text-align: left;
   padding: 10px 0 0 100px;
@@ -222,8 +222,12 @@ img.hobbies{
       margin: 30px auto;
     }
 
-
 .swiper {
   width: 600px;
-  height: 300px;
+  height: 350px;
+  margin-bottom: 40px;
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
