@@ -1,39 +1,15 @@
-function init(){
-  //alert('it works');
-  var el = document.getElementById('canvas');
-  var myLocation = new google.maps.LatLng(41.835117, -87.627130);
-  var mapOptions = {
-    center: myLocation,
-    zoom: 18,
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
-    mapTypeControlOptions: {
-      position: google.maps.ControlPosition.BOTTOM_CENTER
-    }
-  };
-
-  var myMap = new google.maps.Map(el, mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myLocation,
-    map: myMap,
-    animation: google.maps.Animation.BOUNCE,
-    icon: 'iit-icon.png'
-  });
-
-  var contentString = '<h1>IIT Perlstein Hall</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate odit optio, voluptatem placeat odio dignissimos illo magnam esse asperiores voluptas at iure vero eum, nemo aperiam? Ipsam, atque nobis rem.</p>';
-
-  var infowindow = new google.maps.InfoWindow({
-      content: contentString
+function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+        center: {lat: 41.836449, lng: -87.626691},
+        zoom: 15,
     });
 
-  google.maps.event.addListener(marker, 'mouseover', function() {
-      infowindow.open(myMap, marker);
+    const marker = new google.maps.Marker({
+        map,
+        position: {lat: 41.838615380326466, lng: -87.63213314132148},
+        title: "Ferro's",
     });
-
 }
-
-google.maps.event.addDomListener(window, 'load', init);
-   
 
 /*For the slider*/
 const swiper = new Swiper('.swiper', {
