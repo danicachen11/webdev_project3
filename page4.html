@@ -2,21 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Map Page</title>
+    <title>Hobbies Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
-    <script asyncsrc src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr06XgFmTqX-jyP99kNQQb57yOzlE10Wg&libraries=maps,marker&callback=initMap" defer></script>
+    <script src="script.js"></script>
   </head>
-
+  
   <body>
-    <div id="page-wrapper">
-      <header id= main-header>
-        <h1 class="container">Map</h1>
+    <div id="page-wrapper" >
+      <header id= main-header >
+        <h1>Map</h1>
       </header>
       <nav id="page4">
         <div class="container">
@@ -28,9 +25,12 @@
           </ul>
         </div>
       </nav>
+
+      <div id="map"></div>
+
+      <footer>
+        <p>A footer</p>
+      </footer>
     </div>
-    <div id="map"></div>
   </body>
 </html>
-
-
