@@ -2,10 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Resume Page</title>
+    <title>Map Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
+  <body>
+    <div id="page-wrapper">
+      <header id= main-header>
+        <h1 class="container">Map</h1>
+      </header>
+      <nav id="page1">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">Resume</a></li>
+            <li><a href="page2">Family</a></li>
+            <li><a href="page3">Hobbies</a></li>
+            <li><a href="page3">Map</a></li>
+          </ul>
+        </div>
+      </nav>
+
+     <section id="love">
+        <h2>Why I Love my Family!</h2>
+        <p>My family is <em>everything</em> to me! They support and respect my personal choices.</p>
+        <p>My mom somehow knows exactly where everything is, even when I’m sure it’s lost forever. My dad works as a cook and I love his cooking more than my moms', though I would <strong>never</strong> admit it. My parents help me with paying the remaining school fees after my scholarship. My older sister teaches me almost everything from how to dress formally to how taxes work. Being part of a family is <strong>wonderful!</strong></p>
+      </section>
+      <section id="origins">
+        <h2>My Origins: Taishan, Guangdong</h2>
+        <img class="family" src="media/map.png" alt="Map of China with Taishan labeled with red font">
+      </section>
+         <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">
+          <img src="media/map.png" alt="Map of Taishan" title="Map of Taishan"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="media/picture2.png" alt="Picture 2" title="Picture 2"/>
+        </div>
+      </div>
+
+         <div class="swiper-pagination"></div>
+
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+       </div>
+    <script>
+      var swiper = new Swiper('.swiper', {
+        loop: true,  // Enable looping
+        autoplay: {   // Autoplay the slides
+        delay: 5000,  // Delay between slides (in ms)
+        },
+        pagination: {
+          el: '.swiper-pagination',  // Pagination
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',  // Next button
+          prevEl: '.swiper-button-prev',  // Previous button
+        },
+      });
+    </script>
+
+    </div>
+  </body>
 </html>
+
