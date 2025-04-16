@@ -6,14 +6,17 @@ function initMap() {
 
 const logoImg = document.createElement("img");
     logoImg.src = "media/bigBenMarker.png";      
-    logoImg.style.width = "48px";                
-    logoImg.style.height = "48px";
-
-const marker = new google.maps.marker.AdvancedMarkerElement({
+const customMarker = new google.maps.marker.AdvancedMarkerElement({
     map: map,
     position: { lat: 51.5007, lng: 0.1246 },
     content: logoImg,
-    title: "My Personal Logo Marker",
+    title: "custom logo marker",
+    });
+
+const marker = new google.maps.Marker({
+    map,
+    position: {lat: 51.5007, lng: 0.1246},
+    title: "Big Ben",
     });
 }
 
