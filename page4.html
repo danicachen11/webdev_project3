@@ -5,18 +5,15 @@
     <title>Hobbies Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr06XgFmTqX-jyP99kNQQb57yOzlE10Wg&libraries=maps,marker&callback=initMap" defer></script>
     <script src="script.js"></script>
   </head>
 
   <body>
     <div id="page-wrapper" >
-      <header id= main-header >
+      <header id= "main-header">
         <h1>Map</h1>
       </header>
       <nav id="page4">
@@ -33,7 +30,7 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="media/BigBen1.png" alt="Picture1" title="Picture1"/>
+            <img src="media/BigBen1.png" alt="Picture1" title="Picture 1"/>
           </div>
           <div class="swiper-slide">
             <img src="media/BigBen2.png" alt="Picture 2" title="Picture 2"/>
@@ -45,19 +42,9 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    <script>
-      var swiper = new Swiper('.swiper', {
-        loop: true, 
-        autoplay: {
-        delay: 5000,
-        },
-        
-        navigation: {
-          nextEl: '.swiper-button-next',  // Next button
-          prevEl: '.swiper-button-prev',  // Previous button
-        },
-      });
-    </script>
+
+
+
 
       <div id="map"></div>
 
