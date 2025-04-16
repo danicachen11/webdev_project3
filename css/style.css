@@ -212,6 +212,7 @@ img.hobbies{
   width: 600px;
   height: 350px;
   margin-bottom: 40px;
+}
 
 .swiper-slide img {
   width: 100%;
@@ -226,3 +227,9 @@ img.hobbies{
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+
+nav#page4 {
+  background-color: black;;
+}
+
+
