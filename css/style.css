@@ -206,8 +206,6 @@ img.hobbies{
   background-color: whitesmoke;
 }
 
-/*slider*/
-
 .swiper {
   width: 600px;
   height: 350px;
@@ -225,7 +223,8 @@ img.hobbies{
   width: 80%;
   position: relative;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid lightpink;
+  margin: 0 125px;
 }
 
 nav#page4 {

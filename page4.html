@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr06XgFmTqX-jyP99kNQQb57yOzlE10Wg&libraries=maps,marker&callback=initMap" defer></script>
-    <script src="script.js"></script>
   </head>
 
   <body>
@@ -26,10 +25,9 @@
           </ul>
         </div>
       </nav>
-
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="slide-1">
             <img src="media/BigBen1.png" alt="Picture1" title="Picture 1"/>
           </div>
           <div class="swiper-slide">
@@ -42,15 +40,8 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-
-
-
-
       <div id="map"></div>
-
-      <footer>
-        <p>A footer</p>
-      </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
