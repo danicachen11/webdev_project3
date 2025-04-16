@@ -184,7 +184,7 @@ nav#page3 ul li a:hover {
 
 img.hobbies{ 
   border: 4px solid brown;
-  width: 35%;
+  width: 40%;
   padding: 10px;
   background: linear-gradient(135deg, rgba(242,130,91,1) 0%,rgba(140,42,43,1) 50%,rgba(240,113,70,1) 100%);
   margin: 20px 0 20px 0px;
@@ -206,6 +206,42 @@ img.hobbies{
   background-color: whitesmoke;
 }
 
+
+@media (max-width: 700px) {
+  #mediums h2, #welcome h2, #stationary h2 {
+    color: rosybrown;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  img.hobbies {
+    width: 90%;
+    margin: 10px;
+    display: block;
+  }
+
+  nav ul li {
+    float: none;
+    width: 100%;
+  }
+
+   ul, p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+
+/*page4*/
+nav#page4 {
+  background-color: black;
+}
+
+/*slider*/
 .swiper {
   width: 600px;
   height: 350px;
@@ -217,7 +253,7 @@ img.hobbies{
   height: 100%;
 }
 
-
+/*map*/
 #map {
   height: 500px;
   width: 80%;
@@ -227,8 +263,6 @@ img.hobbies{
   margin: 0 125px;
 }
 
-nav#page4 {
-  background-color: black;;
-}
+
 
 
