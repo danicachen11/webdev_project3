@@ -215,9 +215,8 @@ img.hobbies{
   }
 
   img.hobbies {
-    width: 90%;
+    width: 70%;
     margin: 10px;
-    display: block;
   }
 
   nav ul li {
@@ -225,7 +224,7 @@ img.hobbies{
     width: 100%;
   }
 
-   ul, p {
+  ul, p {
     font-size: 14px;
     padding: 0 20px;
   }
@@ -235,6 +234,43 @@ img.hobbies{
     padding: 15px;
   }
 }
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  #mediums, #stationary {
+    padding: 20px;
+    width: 95%;
+  }
+
+  #mediums:hover, #stationary:hover {
+    background-color:  #e0e0e0;
+    box-shadow: 0 0 16px rgba(0.2, 0.2, 0.2, 0.2);
+  }
+
+  img.hobbies {
+    width: 50%;
+  }
+
+  #welcome h2 {
+    font-size: 2em;
+    color: whitesmoke;
+    text-shadow: 
+    1px 1px 0 red, 
+    2px 2px 0 orange, 
+    3px  3px 0 yellow, 
+    4px 4px 0 green, 
+    5px 5px 0 blue, 
+    6px 6px 0 indigo, 
+    7px 7px 0 violet;
+  }
+
+  footer {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+
+}
+
 
 /*page4*/
 nav#page4 {
