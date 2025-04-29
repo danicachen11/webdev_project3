@@ -4,28 +4,20 @@ function initMap() {
     zoom: 15,
   });
 
-const logoImg = document.createElement("img");
-  logoImg.src = "media/bigBenMarker.png";      
-const customMarker = new google.maps.marker.AdvancedMarkerElement({
-  map: map,
-  position: { lat: 51.5007, lng: 0.1246 },
-  content: logoImg,
-  title: "custom logo marker",
+  const marker = new google.maps.Marker({
+    map,
+    position: {lat: 51.5007, lng: 0.1246},
+    title: "Big Ben",
+    icon: "media/bigBenMarker.png",
   });
 
-const marker = new google.maps.Marker({
-  map,
-  position: {lat: 51.5007, lng: 0.1246},
-  title: "Big Ben",
-});
+  const infoWindow = new google.maps.InfoWindow({
+    content: "This is one of London's iconic landmarks!",
+  });
 
-const infoWindow = new google.maps.InfoWindow({
-  content: "This is one of London's iconic landmarks!",
-});
-
-marker.addListener("click", () => {
-  infoWindow.open(map, marker);
-});
+  marker.addListener("click", () => {
+    infoWindow.open(map, marker);
+  });
 
 }
 
