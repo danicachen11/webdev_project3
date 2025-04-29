@@ -18,20 +18,24 @@ function initMap() {
     infoWindow.open(map, marker);
   });
 
-  const logoImg = document.createElement("img");
-  logoImg.src = "media/bigBenMarker.png"; // Your custom image
-
-  const customMarker = new google.maps.marker.AdvancedMarkerElement({
+  const palaceMarker = new google.maps.Marker({
     map,
-    position: { lat: 51.4995, lng: 0.1248 },
-    content: logoImg, // Custom image for the marker
+    position: { lat: 51.4995, lng: 0.1248 }, // Coordinates for Palace of Westminster
     title: "Palace of Westminster",
+    icon: {
+    url: "media/bigBenMarker.png",  // Your custom icon path
+    scaledSize: new google.maps.Size(50, 50), // Custom size for the icon
+    },
   });
 
-  // InfoWindow for custom marker
-  const customInfoWindow = new google.maps.InfoWindow({
-    content: "This is the Palace of Westminster!",
+  const palaceInfoWindow = new google.maps.InfoWindow({
+    content: "Contrary to what most think, Big Ben is not the name of the actual place, but rather a nickname for the large bell inside the clock tower at the Palace of Westminster.",
   });
+
+  palaceMarker.addListener("click", () => {
+    palaceInfoWindow.open(map, palaceMarker);
+  });
+
 }
 
   var swiper = new Swiper('.swiper', {
