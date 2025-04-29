@@ -20,11 +20,11 @@ function initMap() {
 
   const palaceMarker = new google.maps.Marker({
     map,
-    position: { lat: 51.4995, lng: 0.1248 }, // Coordinates for Palace of Westminster
+    position: { lat: 51.4995, lng: 0.1248 },
     title: "Palace of Westminster",
     icon: {
-    url: "media/bigBenMarker.png",  // Your custom icon path
-    scaledSize: new google.maps.Size(50, 50), // Custom size for the icon
+    url: "media/bigBenMarker.png", 
+    scaledSize: new google.maps.Size(60, 60),
     },
   });
 
