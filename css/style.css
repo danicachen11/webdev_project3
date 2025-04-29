@@ -207,7 +207,7 @@ img.hobbies{
 }
 
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   #mediums h2, #welcome h2, #stationary h2 {
     color: rosybrown;
     font-size: 1.5em;
@@ -235,7 +235,7 @@ img.hobbies{
   }
 }
 
-@media (min-width: 700px) and (max-width: 1200px) {
+@media (min-width: 1200px) {
   #mediums, #stationary {
     padding: 20px;
     width: 95%;
