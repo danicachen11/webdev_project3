@@ -29,7 +29,7 @@ function initMap() {
   });
 
   const palaceInfoWindow = new google.maps.InfoWindow({
-    content: "Contrary to what most think, Big Ben is not the name of the actual place, but rather a nickname for the large bell inside the clock tower at the Palace of Westminster here.",
+    content: "Contrary to what most think, Big Ben is actually not the name of the actual place, but rather just a nickname for the large bell inside the clock tower at the Palace of Westminster here.",
   });
 
   palaceMarker.addListener("click", () => {
