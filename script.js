@@ -1,7 +1,7 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     center: {lat: 51.500857, lng: 0.124598},
-    zoom: 15,
+    zoom: 10,
   });
 
   const marker = new google.maps.Marker({
@@ -29,7 +29,7 @@ function initMap() {
   });
 
   const palaceInfoWindow = new google.maps.InfoWindow({
-    content: "Contrary to what most think, Big Ben is not the name of the actual place, but rather a nickname for the large bell inside the clock tower at the Palace of Westminster.",
+    content: "Contrary to what most think, Big Ben is not the name of the actual place, but rather a nickname for the large bell inside the clock tower at the Palace of Westminster here.",
   });
 
   palaceMarker.addListener("click", () => {
